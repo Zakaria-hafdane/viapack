@@ -1,0 +1,442 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1"/>
+  <meta name="description" content="Viapack — Machines et matériaux d'emballage professionnels. Cercleuses, banderoleuses, thermofilmeuses, films VCI et plus encore."/>
+  <title>Viapack - Machines et matériels d'emballage professionnels</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+
+<!-- TOP BAR 
+<div class="top-bar"><div class="container inner">
+  <div class="acct"><a href="pages/account.html"><i class="fa fa-user"></i> Mon compte</a><a href="pages/account.html"><i class="fa fa-sign-in-alt"></i> Se connecter</a></div>
+  <div class="social"><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" title="X"><i class="fab fa-x-twitter"></i></a><a href="#" title="YouTube"><i class="fab fa-youtube"></i></a><a href="#" title="Instagram"><i class="fab fa-instagram"></i></a><a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div>
+</div></div> -->
+
+<!-- HEADER -->
+<header class="site-header"><div class="container header-inner">
+  <a href="index.html" class="logo-link"><img src="images/logo.png" alt="Viapack" class="logo-img"/></a>
+  <nav class="main-nav" id="main-nav"><ul>
+    <li><a href="pages/materiel/index.html">Matériel d'emballage <span class="arr">▾</span></a>
+      <div class="dropdown dd-simple"><ul>
+        <li><a href="pages/materiel/film-palettisation/index.html">Film et palettisation</a></li>
+        <li><a href="pages/materiel/rubans/index.html">Rubans adhésifs</a></li>
+        <li><a href="pages/materiel/feuillard/index.html">Feuillard et accessoires</a></li>
+        <li><a href="pages/materiel/film-retractable/index.html">Films rétractables</a></li>
+        
+        <li><a href="pages/materiel/calage/index.html">Calage et protection</a></li>
+        
+        <li><a href="pages/materiel/etiquettes/index.html">Etiquettes / porte-documents</a></li>
+        <li><a href="pages/materiel/sacs/index.html">Sacs en plastique</a></li>
+        
+      </ul></div>
+    </li>
+    <li><a href="pages/machines/index.html">Machines d'emballage <span class="arr">▾</span></a>
+      <div class="dropdown">
+        <div class="dd-col"><h4>Enveloppements &amp; LGV</h4><ul>
+          <li><a href="pages/machines/banderoleuses/index.html">Banderoleuses</a></li>
+          <li><a href="pages/machines/lignes-automatiques.html">Lignes automatiques</a></li>
+        </ul></div>
+        <div class="dd-col"><h4>Formation &amp; fermeture</h4><ul>
+          <li><a href="pages/machines/hot-melt.html">Systèmes Hot Melt</a></li>
+          <li><a href="pages/machines/humecteurs.html">Humecteurs papier gommé</a></li>
+          <li><a href="pages/machines/formeuses.html">Formeuses de cartons</a></li>
+          <li><a href="pages/machines/fermeuses.html">Fermeuses de cartons</a></li>
+        </ul></div>
+        <div class="dd-col"><h4>Film rétractable</h4><ul>
+          <li><a href="pages/machines/thermofilmeuses/index.html">Thermofilmeuses</a></li>
+          <li><a href="pages/machines/ensacheuses/index.html">Ensacheuses</a></li>
+        </ul></div>
+        <div class="dd-col"><h4>Remplissage &amp; protection</h4><ul>
+          <li><a href="pages/machines/remplissage/index.html">Remplissage et protection</a></li>
+          <li><a href="pages/machines/broyeurs/index.html">Broyeurs de cartons</a></li>
+        </ul></div>
+        <div class="dd-col"><h4>Cerclage &amp; recyclage</h4><ul>
+          <li><a href="pages/machines/cercleuses/index.html">Cercleuses</a></li>
+          <li><a href="pages/machines/presses/index.html">Presses à balles</a></li>
+        </ul></div>
+      </div>
+    </li>
+    <li><a href="pages/qui-sommes-nous.html">Qui Sommes-Nous?</a></li>
+    <li><a href="pages/applications.html">Applications D'Emballage</a></li>
+    <li><a href="pages/blog/index.html">Blog</a></li>
+    <li><a href="pages/contact.html">Contact</a></li>
+  </ul></nav>
+  <div class="hdr-right">
+    <button class="search-hdr-btn" id="search-open" aria-label="Rechercher"><i class="fa fa-search"></i></button>
+    <div class="cart-btn" id="cart-open" style="cursor:pointer;" title="Mon panier"><i class="fa fa-shopping-cart"></i><span class="cart-count" id="cart-count">0</span></div>
+    <button class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></button>
+  </div>
+</div></header>
+
+<!-- SEARCH OVERLAY -->
+<div class="search-overlay" id="search-overlay" role="dialog" aria-label="Recherche">
+  <button class="search-close" id="search-close" aria-label="Fermer la recherche"><i class="fa fa-times"></i></button>
+  <div class="search-form-wrap">
+    <input type="text" id="search-input" placeholder="Rechercher un produit, une machine…" autocomplete="off" spellcheck="false"/>
+    <i class="fa fa-search sf-icon"></i>
+  </div>
+  <div class="search-results-wrap" id="search-results"></div>
+  <div class="search-popular">
+    <p>Recherches populaires</p>
+    <div class="search-pop-tags">
+      <a href="pages/machines/cercleuses/index.html">Cercleuses</a>
+      <a href="pages/machines/banderoleuses/index.html">Banderoleuses</a>
+      <a href="pages/materiel/film-palettisation/index.html">Film étirable</a>
+      <a href="pages/materiel/anticorrosion/index.html">VCI anticorrosion</a>
+      <a href="pages/materiel/rubans/index.html">Rubans adhésifs</a>
+      <a href="pages/machines/hot-melt.html">Hot Melt</a>
+    </div>
+  </div>
+  <p class="search-hint-txt">Appuyez sur <kbd>Échap</kbd> pour fermer &nbsp;·&nbsp; <kbd>Ctrl K</kbd> pour ouvrir</p>
+</div>
+
+<!-- CART OVERLAY + SIDEBAR -->
+<div class="cart-overlay" id="cart-overlay"></div>
+<aside class="cart-sidebar" id="cart-sidebar" aria-label="Panier">
+  <div class="cart-hdr">
+    <h3>Mon panier <span class="ch-badge" id="cart-count-badge"></span></h3>
+    <button class="cart-close-btn" id="cart-close" aria-label="Fermer le panier"><i class="fa fa-times"></i></button>
+  </div>
+  <div class="cart-body" id="cart-body"></div>
+  <div class="cart-foot" id="cart-foot"></div>
+</aside>
+
+<!-- HERO SLIDER -->
+<section class="hero-slider">
+  <div class="slide active">
+    <img src="images/banner-boite-carton-1.gif" alt="Solutions d'emballage Viapack"/>
+    <div class="slide-overlay"><div class="slide-content">
+      <span class="tag">Solutions complètes</span>
+      <h2>Solutions d'emballage industriel de pointe</h2>
+      <p>Machines et matériaux d'emballage pour tous les secteurs d'activité. Livraison rapide partout en France.</p>
+      <a href="pages/machines/index.html" class="btn btn-red">Nos machines</a>
+      <a href="pages/qui-sommes-nous.html" class="btn btn-outline">En savoir plus</a>
+    </div></div>
+  </div>
+  <div class="slide">
+    <img src="images/CERCLEUSE-SPK_EVO-scaled-e1708961412217.jpg" alt="Cercleuses SPK"/>
+    <div class="slide-overlay"><div class="slide-content">
+      <span class="tag">Bestseller</span>
+      <h2>Cercleuses SPK + Rubans adhésifs</h2>
+      <p>Sécurisez et stabilisez vos charges avec nos cercleuses SPK et rubans professionnels.</p>
+      <a href="pages/machines/cercleuses/index.html" class="btn btn-red">Découvrir</a>
+      <a href="pages/contact.html" class="btn btn-outline">Demander un devis</a>
+    </div></div>
+  </div>
+  <div class="slide">
+    <img src="images/Sistema_aplicador_cola_cajas-1.jpg" alt="Hot Melt Graco"/>
+    <div class="slide-overlay"><div class="slide-content">
+      <span class="tag">Innovation</span>
+      <h2>Systèmes thermofusibles Hot Melt Graco</h2>
+      <p>La technologie InvisiPac HM25c pour un emballage fiable, rapide et rentable.</p>
+      <a href="pages/machines/hot-melt.html" class="btn btn-red">Plus d'informations</a>
+    </div></div>
+  </div>
+  <div class="slide">
+    <img src="images/SPK-7005-remplissage-coussins-air_detalle.jpg" alt="Remplissage coussins"/>
+    <div class="slide-overlay"><div class="slide-content">
+      <span class="tag">Protection</span>
+      <h2>Remplissage par coussins d'air SPK</h2>
+      <p>Machines SPK-7005 pour la production de coussins d'air de calage à la demande.</p>
+      <a href="pages/machines/remplissage/index.html" class="btn btn-red">Découvrir la gamme</a>
+    </div></div>
+  </div>
+  <button class="sarr prev"><i class="fa fa-chevron-left"></i></button>
+  <button class="sarr next"><i class="fa fa-chevron-right"></i></button>
+  <div class="slider-dots"><div class="dot active"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+</section>
+
+<!-- INFO STRIP -->
+<div class="info-strip"><div class="container inner">
+  <div class="info-item"><i class="fa fa-shopping-cart"></i><div><strong>COMMANDES EN LIGNE</strong><span>Livraison gratuite dès 100€ HT</span></div></div>
+  <div class="info-item"><i class="fa fa-headset"></i><div><strong>SERVICE APRÈS-VENTE</strong><span>sav@viapack.fr</span></div></div>
+  <div class="info-item"><i class="fa fa-tools"></i><div><strong>PIÈCES DÉTACHÉES</strong><span>+100 000 références en stock</span></div></div>
+  <div class="info-item"><i class="fa fa-file-alt"></i><div><strong>GRANDES QUANTITÉS ?</strong><span>Demandez un devis</span></div></div>
+  <div class="info-item"><i class="fa fa-certificate"></i><div><strong>CERTIFIÉ ISO 9001:2015</strong><span>Qualité garantie</span></div></div>
+</div></div>
+
+<!-- FEATURED PRODUCTS -->
+<section class="section">
+  <div class="container">
+    <div class="section-hdr">
+      <span class="eyebrow">Que proposons-nous ?</span>
+      <h2>Technologie d'emballage de pointe</h2>
+      <p>Quelle que soit l'activité de votre entreprise, vous trouverez chez Viapack les solutions les plus adaptées pour un emballage de qualité.</p>
+    </div>
+    <div class="products-grid">
+      <a href="pages/machines/remplissage/index.html" class="product-card" data-animate data-delay="0.05">
+        <div class="pc-img"><img src="images/SPK-7005-remplissage-coussins-air_detalle.jpg" alt="SPK remplissage"/><div class="pc-brand"><img src="images/SPK_logo-1.png" alt="SPK"/></div></div>
+        <div class="pc-body"><span class="pc-count"><i class="fa fa-boxes"></i> 8 produits</span><h3>Remplissage par coussins d'air</h3><p>Machines SPK de remplissage de coussins d'air pour le calage et la protection des produits à la demande.</p><span class="more">Plus d'informations</span></div>
+      </a>
+      <div class="product-card" data-animate data-delay="0.15">
+        <div class="pc-img"><img src="images/film-etirable-VCI.jpeg" alt="VCI"/><div class="pc-brand"><img src="images/Logo_CONTROLOX_Final.png" alt="ControlOx"/></div></div>
+        <div class="pc-body">
+          <span class="pc-count"><i class="fa fa-boxes"></i> 24 produits</span>
+          <h3>Anticorrosion VCI ControlOx</h3>
+          <p>Films, sachets ZIP et papier kraft VCI ControlOx pour protéger les métaux pendant stockage et transport.</p>
+          <div class="pc-price">À partir de <strong>45,90&nbsp;€&nbsp;HT</strong></div>
+          <div class="pc-actions">
+            <a href="pages/materiel/anticorrosion/index.html" class="more">Plus d'infos</a>
+            <button class="btn-cart-add"
+              data-id="vci-film-controlox"
+              data-name="Film VCI ControlOx"
+              data-brand="ControlOx"
+              data-price="45.90"
+              data-img="images/film-etirable-VCI.jpeg">
+              <i class="fa fa-cart-plus"></i> Ajouter
+            </button>
+          </div>
+        </div>
+      </div>
+      <a href="pages/machines/hot-melt.html" class="product-card" data-animate data-delay="0.25">
+        <div class="pc-img"><img src="images/Sistema_aplicador_cola_cajas-1.jpg" alt="Hot Melt"/><div class="pc-brand"><img src="images/graco-sin-fondo-colores.png" alt="Graco"/></div></div>
+        <div class="pc-body"><span class="pc-count"><i class="fa fa-boxes"></i> 6 produits</span><h3>Système Hot Melt thermofusible</h3><p>Le système InvisiPac HM25c Graco : zéro carbonisation, démarrage en 5 min, réduction consommation colle -20%.</p><span class="more">Plus d'informations</span></div>
+      </a>
+      <a href="pages/machines/broyeurs/index.html" class="product-card" data-animate data-delay="0.05">
+        <div class="pc-img"><img src="images/broyeur-cartons-industries-profipack.jpg" alt="Broyeurs"/><div class="pc-brand"><img src="images/logo_HSM.png" alt="HSM"/></div></div>
+        <div class="pc-body"><span class="pc-count"><i class="fa fa-boxes"></i> 9 produits</span><h3>Broyeurs Profipack HSM</h3><p>Transformez vos cartons usagés en matériel de calage gratuit. Réduction volume déchets jusqu'à 95%.</p><span class="more">Plus d'informations</span></div>
+      </a>
+      <a href="pages/machines/cercleuses/index.html" class="product-card" data-animate data-delay="0.15">
+        <div class="pc-img"><img src="images/CERCLEUSE-SPK_EVO-scaled-e1708961412217.jpg" alt="Cercleuses"/><div class="pc-brand"><img src="images/SPK_logo-1.png" alt="SPK"/></div></div>
+        <div class="pc-body"><span class="pc-count"><i class="fa fa-boxes"></i> 18 produits</span><h3>Cercleuses SPK</h3><p>De table, automatiques ou à batterie lithium EVO. La gamme SPK complète pour tous vos besoins de cerclage.</p><span class="more">Plus d'informations</span></div>
+      </a>
+      <a href="pages/machines/banderoleuses/index.html" class="product-card" data-animate data-delay="0.25">
+        <div class="pc-img"><img src="images/banderoleuse-film-macro-robopac.jpeg" alt="Banderoleuses"/><div class="pc-brand"><img src="images/SPK_logo-1.png" alt="SPK"/></div></div>
+        <div class="pc-body"><span class="pc-count"><i class="fa fa-boxes"></i> 14 produits</span><h3>Banderoleuses</h3><p>Plateau tournant, bras tournant, horizontales et bagages. Pay Per Use disponible sans investissement initial.</p><span class="more">Plus d'informations</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATIONS -->
+<section class="section section-gray">
+  <div class="container">
+    <div class="section-hdr"><span class="eyebrow">Secteurs d'activité</span><h2>Des solutions pour chaque industrie</h2></div>
+    <div class="app-grid">
+      <a href="pages/applications.html#logistique" class="app-card"><img src="images/logistica-ecommerce-ok.jpg" alt="Logistique"/><div class="app-label">Logistique &amp; E-commerce</div></a>
+      <a href="pages/applications.html#alimentaire" class="app-card"><img src="images/alimentacion-ok.jpg" alt="Alimentaire"/><div class="app-label">Secteur alimentaire</div></a>
+      <a href="pages/applications.html#automobile" class="app-card"><img src="images/automocion-ok.jpg" alt="Automobile"/><div class="app-label">Automobile</div></a>
+      <a href="pages/applications.html#chimique" class="app-card"><img src="images/industria-quimica-ok.jpg" alt="Chimique"/><div class="app-label">Industrie chimique</div></a>
+      <a href="pages/applications.html#bois" class="app-card"><img src="images/madera-mueble-ok.jpg" alt="Bois"/><div class="app-label">Bois &amp; Meuble</div></a>
+    </div>
+  </div>
+</section>
+
+<!-- SPARE PARTS -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="spare-inner">
+      <div class="spare-content" data-animate>
+        <span class="eyebrow">Service de pièces détachées</span>
+        <h2>Nous disposons d'une chaîne logistique efficace et sûre.</h2>
+        <p>Deux entrepôts automatiques verticaux nous permettent de stocker et d'organiser 100% des pièces détachées. Service efficace, fiable et sûr pour tous nos clients.</p>
+        <div class="spare-feats">
+          <div class="spare-feat"><i class="fa fa-shipping-fast"></i><p>Envois rapides partout en France</p></div>
+          <div class="spare-feat"><i class="fa fa-box-open"></i><p>+100 000 références en stock</p></div>
+          <div class="spare-feat"><i class="fa fa-tools"></i><p>Assistance technique dédiée</p></div>
+          <div class="spare-feat"><i class="fa fa-phone-alt"></i><p>Service téléphonique et sur site</p></div>
+        </div>
+        <a href="pages/contact.html" class="btn btn-red">NOUS CONTACTER</a>
+      </div>
+      <div data-animate data-delay="0.2">
+        <img src="images/2-modulas-logo-controlpack-1024x1019-removebg-preview.png" alt="Entrepôts Viapack" style="border-radius:8px;width:100%;"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-banner">
+  <div class="container">
+    <h2>OBTENEZ VOTRE PROJET CLÉ EN MAIN</h2>
+    <p>Spécialistes de la conception, fabrication et distribution de machines et matériaux d'emballage.</p>
+    <a href="pages/contact.html" class="btn btn-white">Demander un devis gratuit</a>
+  </div>
+</div>
+
+<!-- HOW WE WORK -->
+<section class="section section-gray">
+  <div class="container">
+    <div class="section-hdr"><span class="eyebrow">Comment travaillons-nous ?</span><h2>Notre processus de travail</h2></div>
+    <div class="steps-grid">
+      <div class="step-card" data-animate data-delay="0.05"><div class="step-num">1</div><h3>Étude des données</h3><p>Analyse des caractéristiques et des flux de votre ligne de production.</p></div>
+      <div class="step-card" data-animate data-delay="0.15"><div class="step-num">2</div><h3>Solution proposée</h3><p>Solution technique personnalisée adaptée à chaque situation spécifique.</p></div>
+      <div class="step-card" data-animate data-delay="0.25"><div class="step-num">3</div><h3>Conception &amp; programmation</h3><p>Notre équipe conçoit et programme chacune des machines sur mesure.</p></div>
+      <div class="step-card" data-animate data-delay="0.35"><div class="step-num">4</div><h3>Montage &amp; mise en service</h3><p>Installation et mise en service directement dans vos installations.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TABS CUSTOMISATION -->
+<section class="section">
+  <div class="container">
+    <div class="section-hdr"><span class="eyebrow">Sur mesure</span><h2>Personnalisation de vos emballages</h2></div>
+    <div class="tab-area">
+      <div class="tab-nav">
+        <button class="tab-btn active" data-tab="tc1">Personnalisation de cartons</button>
+        <button class="tab-btn" data-tab="tc2">Personnalisation de rubans adhésifs</button>
+        <button class="tab-btn" data-tab="tc3">Personnalisation de film étirable</button>
+      </div>
+      <div class="tab-pane active" id="tc1">
+        <div class="ti"><img src="images/caja-controlpack-removebg-preview.png" alt="Cartons personnalisés"/></div>
+        <div class="tab-form"><h3>PERSONNALISATION DE BOÎTES EN CARTON</h3><h4>Impression et dimensions sur mesure</h4>
+          <div class="form-row">
+            <div class="fg"><label>Longueur (cm)</label><input type="number" placeholder="Ex: 30" min="10"/></div>
+            <div class="fg"><label>Largeur (cm)</label><input type="number" placeholder="Ex: 20" min="10"/></div>
+            <div class="fg"><label>Hauteur (cm)</label><input type="number" placeholder="Ex: 15" min="10"/></div>
+          </div>
+          <p style="font-size:12px;color:#aaa;margin-bottom:18px;">* Dimensions minimales 10cm par côté</p>
+          <button class="btn btn-red search-btn">Rechercher</button>
+        </div>
+      </div>
+      <div class="tab-pane" id="tc2">
+        <div class="ti"><img src="images/cintas-adhesivas.png" alt="Rubans personnalisés"/></div>
+        <div class="tab-form"><h3>PERSONNALISATION DE RUBANS ADHÉSIFS</h3><h4>Impression et dimensions sur mesure</h4>
+          <div class="form-row" style="grid-template-columns:1fr;">
+            <div class="fg"><label>Matériel</label><select><option value="">Sélectionnez</option><option>PP Acrylique</option><option>PP Solvant</option><option>PP Hot Melt</option><option>PVC</option><option>Kraft gommé</option></select></div>
+          </div>
+          <button class="btn btn-red search-btn">Rechercher</button>
+        </div>
+      </div>
+      <div class="tab-pane" id="tc3">
+        <div class="ti"><img src="images/film-impreso.png" alt="Film personnalisé"/></div>
+        <div class="tab-form"><h3>PERSONNALISATION DE FILM ÉTIRABLE</h3><h4>Impression et dimensions sur mesure</h4>
+          <div class="form-row" style="grid-template-columns:1fr;">
+            <div class="fg"><label>Couleur</label><select><option value="">Sélectionnez</option><option>Transparent</option><option>Blanc</option><option>Noir</option><option>Bleu</option></select></div>
+          </div>
+          <button class="btn btn-red search-btn">Rechercher</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section section-gray">
+  <div class="container">
+    <div class="section-hdr"><span class="eyebrow">Témoignages</span><h2>Ce qu'en disent nos clients</h2></div>
+    <div class="testi-slider">
+      <div class="testi active"><blockquote>Viapack nous a fourni une solution complète et adaptée à nos besoins industriels. Le service après-vente est réactif et professionnel. Nous recommandons vivement leurs machines de cerclage SPK.</blockquote><cite>— Directeur logistique, entreprise industrielle Nord-Est France</cite></div>
+      <div class="testi"><blockquote>Excellent accompagnement depuis la prise en charge jusqu'à la mise en service. Les emballages anticorrosion VCI ControlOx ont résolu nos problèmes de stockage longue durée sur pièces métalliques.</blockquote><cite>— Responsable production, secteur automobile</cite></div>
+      <div class="testi"><blockquote>La personnalisation de nos boîtes carton à notre logo a été réalisée rapidement avec une qualité irréprochable. Un partenaire de confiance pour toute notre chaîne d'emballage.</blockquote><cite>— Gérant, PME agroalimentaire</cite></div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section class="section section-dark">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;">
+      <div style="color:#fff;">
+        <span style="color:var(--red);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;display:block;margin-bottom:12px;">Service complet</span>
+        <h2 style="font-size:32px;font-weight:800;line-height:1.25;margin-bottom:18px;color:#fff;">Nous sommes prêts à relever tous vos défis d'emballage</h2>
+        <p style="color:rgba(255,255,255,.72);font-size:15px;line-height:1.8;margin-bottom:16px;">Plus de 30 ans d'expérience dans la commercialisation de solutions d'emballage industriel.</p>
+        <p style="color:rgba(255,255,255,.72);font-size:15px;line-height:1.8;">Notre objectif est de faire en sorte que l'emballage devienne un avantage concurrentiel. Solutions innovantes, personnalisées et durables.</p>
+      </div>
+      <div><video controls style="width:100%;border-radius:8px;box-shadow:0 10px 40px rgba(0,0,0,.4);"><source src="https://www.controlpack.fr/wp-content/uploads/2025/01/Controlpack-sigue-creciendo-junto-a-ti.mp4" type="video/mp4"/>Votre navigateur ne supporte pas la vidéo HTML5.</video></div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section class="section">
+  <div class="container">
+    <div class="section-hdr"><span class="eyebrow">Notre blog</span><h2>Actualités et nouveautés</h2></div>
+    <div class="blog-grid">
+      <a href="pages/blog/ensacheuse.html" class="blog-card"><div class="bc-img"><img src="images/convoyeurs-smart.jpeg" alt="Ensacheuse"/></div><div class="bc-body"><span class="bc-tag">Machines</span><div class="bc-meta">Mai 2024</div><h3>Intégrer une ensacheuse dans votre processus d'emballage</h3><p>Les ensacheuses : pour quels secteurs ? Pharma, cosmétiques, agroalimentaire…</p><span class="read-more">Lire la suite</span></div></a>
+      <a href="pages/blog/papier-vci.html" class="blog-card"><div class="bc-img"><img src="images/papier-anticorrosion-vci-blog.png" alt="Papier VCI"/></div><div class="bc-body"><span class="bc-tag">Matériaux</span><div class="bc-meta">Mars 2024</div><h3>Protégez vos produits avec le papier kraft VCI anticorrosion</h3><p>Le papier Kraft VCI est une solution efficace contre la corrosion pendant le stockage.</p><span class="read-more">Lire la suite</span></div></a>
+      <a href="pages/blog/cercleuse-evo.html" class="blog-card"><div class="bc-img"><img src="images/CERCLEUSE-SPK_EVO-scaled-e1708961412217.jpg" alt="Cercleuse EVO"/></div><div class="bc-body"><span class="bc-tag">Innovation</span><div class="bc-meta">Février 2024</div><h3>La cercleuse à batterie SPK EVO — révolution du cerclage</h3><p>Sans fil, légère et ultra-puissante. La SPK EVO révolutionne le cerclage professionnel.</p><span class="read-more">Lire la suite</span></div></a>
+    </div>
+    <div style="text-align:center;margin-top:40px;"><a href="pages/blog/index.html" class="btn btn-dark">Voir tous les articles</a></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section section-gray">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="ci">
+        <h2>CONTACTEZ-NOUS</h2>
+        <div class="cd"><i class="fa fa-map-marker-alt"></i><div><h4>Adresse</h4><p>Succursale France<br/>6 Rue des Frères Boudé<br/>31100 Toulouse</p></div></div>
+        <div class="cd"><i class="fa fa-envelope"></i><div><h4>Email</h4><a href="mailto:info@viapack.fr">info@viapack.fr</a></div></div>
+        <div class="cd"><i class="fa fa-phone-alt"></i><div><h4>Téléphone</h4><a href="tel:+33695802491">(+33) 6 95 80 24 91</a></div></div>
+        <div style="margin-top:28px;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.5!2d1.4445!3d43.5923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDM!5e0!3m2!1sfr!2sfr!4v1600000000000" width="100%" height="220" style="border:0;border-radius:6px;" allowfullscreen="" loading="lazy"></iframe></div>
+      </div>
+      <div class="cf">
+        <h3>EXPLIQUEZ-NOUS VOTRE PROJET</h3>
+        <form id="contact-form">
+          <div class="fg"><input type="text" placeholder="Votre nom *" required/></div>
+          <div class="fg"><input type="email" placeholder="Votre email *" required/></div>
+          <div class="fg"><input type="tel" placeholder="Téléphone"/></div>
+          <div class="fg"><input type="text" placeholder="Société"/></div>
+          <div class="fg"><textarea placeholder="Votre message *" required></textarea></div>
+          <button type="submit" class="btn btn-red" style="width:100%;">Envoyer le message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="partners"><div class="container"><div class="partners-logos">
+  <img src="images/logo-bostik.jpg" alt="Bostik"/>
+  <img src="images/logo-graco.jpg" alt="Graco"/>
+  <img src="images/logo-cartonfast.jpg" alt="Cartonfast"/>
+  <img src="images/controlox.png" alt="ControlOx"/>
+  <img src="images/SPK_logo-1.png" alt="SPK"/>
+  <img src="images/logo_HSM.png" alt="HSM"/>
+</div></div></section>
+
+<!-- CATALOGUE STRIP -->
+<div class="cat-strip"><div class="container inner">
+  <img src="images/Catalago_embaalaje-e1758899852442.png" alt="Catalogue Viapack"/>
+  <div><h3>Catalogue Viapack</h3><p>Obtenez-le dès aujourd'hui</p></div>
+  <a href="pages/contact.html" class="btn btn-white">Télécharger</a>
+</div></div>
+
+<!-- FOOTER -->
+<footer class="site-footer"><div class="container">
+  <div class="footer-grid">
+    <div class="fc"><div class="footer-logo-text"><img src="images/logo-vp-icon.svg" alt="" class="footer-logo-icon"/>Via<span>pack</span></div>
+      <p>Machines et matériaux d'emballage. Viapack est une entreprise dédiée à la commercialisation de solutions pour l'optimisation des processus d'emballage.</p>
+      <div class="fsocial"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-x-twitter"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div>
+    </div>
+    <div class="fc"><h4>Informations</h4><ul>
+      <li><a href="pages/blog/index.html">Blog</a></li>
+      <li><a href="pages/qui-sommes-nous.html">Qui sommes-nous ?</a></li>
+      <li><a href="pages/qualite.html">Politique de qualité</a></li>
+      <li><a href="pages/confidentialite.html">Politique de confidentialité</a></li>
+      <li><a href="pages/cookies.html">Politique de cookies</a></li>
+    </ul></div>
+    <div class="fc"><h4>Légal</h4><ul>
+      <li><a href="pages/cgv.html">Conditions générales</a></li>
+      <li><a href="pages/mentions-legales.html">Mentions légales</a></li>
+      <li><a href="pages/contact.html">Contact</a></li>
+    </ul></div>
+    <div class="fc"><h4>Newsletter</h4><p>Recevez nos offres et actualités</p>
+      <form id="nl-form"><div class="fnl">
+        <input type="email" placeholder="Votre adresse email" required/>
+        <p id="nl-msg" style="display:none;color:var(--red);font-size:13px;margin-top:6px;"></p>
+        <button type="submit" class="btn btn-red" style="width:100%;margin-top:6px;">S'inscrire</button>
+      </div></form>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>Copyright &copy; 2026 Viapack — Tous droits réservés</p>
+    <div class="footer-badges">
+      <div class="footer-cert"><i class="fa fa-certificate"></i><div><strong>ISO 9001:2015</strong><span>Certifié qualité</span></div></div>
+      <div class="footer-cert"><i class="fa fa-award"></i><div><strong>EU Seal</strong><span>Sceau d'excellence</span></div></div>
+      <div class="footer-cert"><i class="fa fa-lightbulb"></i><div><strong>PME Innovante</strong><span>Labellisée</span></div></div>
+    </div>
+  </div>
+</div></footer>
+<div id="back-top"><i class="fa fa-chevron-up"></i></div>
+<script src="js/main.js"></script>
+</body></html>
