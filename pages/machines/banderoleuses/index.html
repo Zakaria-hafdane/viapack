@@ -13,10 +13,10 @@
 </head>
 <body>
 
+<!-- TOP BAR 
 <div class="top-bar"><div class="container inner">
-  <div class="acct"><a href="../../../pages/account.html"><i class="fa fa-user"></i> Mon compte</a><a href="../../../pages/account.html"><i class="fa fa-sign-in-alt"></i> Se connecter</a></div>
-  <div class="social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-x-twitter"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div>
-</div></div>
+  <div class="social"><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" title="X"><i class="fab fa-x-twitter"></i></a><a href="#" title="YouTube"><i class="fab fa-youtube"></i></a><a href="#" title="Instagram"><i class="fab fa-instagram"></i></a><a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div>
+</div></div> -->
 <header class="site-header"><div class="container header-inner">
   <a href="../../../index.html" class="logo-link"><img src="../../../images/logo.png" alt="Viapack" class="logo-img"/></a>
   <nav class="main-nav" id="main-nav"><ul>
@@ -26,12 +26,9 @@
         <li><a href="../../../pages/materiel/rubans/index.html">Rubans adhésifs</a></li>
         <li><a href="../../../pages/materiel/feuillard/index.html">Feuillard et accessoires</a></li>
         <li><a href="../../../pages/materiel/film-retractable/index.html">Films rétractables</a></li>
-        
         <li><a href="../../../pages/materiel/calage/index.html">Calage et protection</a></li>
-        
         <li><a href="../../../pages/materiel/etiquettes/index.html">Etiquettes / porte-documents</a></li>
         <li><a href="../../../pages/materiel/sacs/index.html">Sacs en plastique</a></li>
-        
       </ul></div>
     </li>
     <li><a href="../../../pages/machines/index.html">Machines d'emballage <span class="arr">▾</span></a>
@@ -40,17 +37,13 @@
           <li><a href="../../../pages/machines/banderoleuses/index.html">Banderoleuses</a></li>
           <li><a href="../../../pages/machines/lignes-automatiques.html">Lignes automatiques</a></li>
         </ul></div>
-      
         <div class="dd-col"><h4>Film rétractable</h4><ul>
           <li><a href="../../../pages/machines/thermofilmeuses/index.html">Thermofilmeuses</a></li>
           <li><a href="../../../pages/machines/ensacheuses/index.html">Ensacheuses</a></li>
         </ul></div>
-        
         <div class="dd-col"><h4>Cerclage &amp; recyclage</h4><ul>
           <li><a href="../../../pages/machines/cercleuses/index.html">Cercleuses</a></li>
           <li><a href="../../../pages/machines/presses/index.html">Presses à balles</a></li>
-          <li><a href="../../../pages/machines/formeuses.html">Formeuses de cartons</a></li>
-          <li><a href="../../../pages/machines/fermeuses.html">Fermeuses de cartons</a></li>
         </ul></div>
       </div>
     </li>
@@ -60,10 +53,11 @@
     <li><a href="../../../pages/contact.html">Contact</a></li>
   </ul></nav>
   <div class="hdr-right">
-    <div class="cart-btn"><i class="fa fa-shopping-cart"></i><span class="cart-count">0</span></div>
+    <button class="search-hdr-btn" id="search-open" aria-label="Rechercher"><i class="fa fa-search"></i></button>
     <button class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></button>
   </div>
 </div></header>
+<div class="search-overlay" id="search-overlay" role="dialog" aria-label="Recherche"><button class="search-close" id="search-close" aria-label="Fermer la recherche"><i class="fa fa-times"></i></button><div class="search-form-wrap"><input type="text" id="search-input" placeholder="Rechercher un produit, une machine…" autocomplete="off" spellcheck="false"/><i class="fa fa-search sf-icon"></i></div><div class="search-results-wrap" id="search-results"></div><div class="search-popular" id="search-popular"><p>Recherches populaires</p><div class="search-pop-tags" id="search-pop-tags"></div></div><p class="search-hint-txt">Appuyez sur <kbd>Échap</kbd> pour fermer &nbsp;&middot;&nbsp; <kbd>Ctrl K</kbd> pour ouvrir</p></div>
 <div class="page-hero"><div class="container"><div class="breadcrumb"><a href="../../../index.html">Accueil</a> <span class="sep">›</span> <a href="../index.html">Machines</a> <span class="sep">›</span> Banderoleuses</div><h1>Banderoleuses</h1><p>Découvrez nos machines d'emballage pour filmer vos palettes rapidement et efficacement.</p></div></div>
 <section class="page-body"><div class="container">
   <div class="cat-desc"><h2>Pay Per Use Viapack — la banderoleuse sans investissement</h2>
@@ -76,66 +70,67 @@
   <img src="../../../images/banderoleuse-film-macro-robopac.jpeg" alt="Banderoleuses de palettes" loading="lazy"/>
   <div class="subcat-card-info"><h3>Banderoleuses de palettes</h3><span>23 produits</span></div>
 </a><a href="banderoleuses-horizontales/index.html" class="subcat-card">
-  <img src="../../../images/ligne-automatique-emballage-categorie.png" alt="Banderoleuses horizontales" loading="lazy"/>
+  <img src="../../../img/Banderoleuses/banderoleuse-horizontale-spiror-367x367.jpg" alt="Banderoleuses horizontales" loading="lazy"/>
   <div class="subcat-card-info"><h3>Banderoleuses horizontales</h3><span>8 produits</span></div>
-</a><a href="macroplat.html" class="subcat-card">
-  <img src="../../../images/ligne-automatique-emballage-categorie.png" alt="Système Macroplat" loading="lazy"/>
+</a><a href="../../../pages/produits/spk-macroplat/index.html" class="subcat-card">
+  <img src="../../../images/banderoleuse-macroplat.jpg" alt="Système Macroplat" loading="lazy"/>
   <div class="subcat-card-info"><h3>Système Macroplat</h3><span>1 produits</span></div>
-</a><a href="banderoleuses-bagages.html" class="subcat-card">
-  <img src="../../../images/ligne-automatique-emballage-categorie.png" alt="Banderoleuses de bagages" loading="lazy"/>
-  <div class="subcat-card-info"><h3>Banderoleuses de bagages</h3><span>2 produits</span></div>
-</a><a href="ecover.html" class="subcat-card">
-  <img src="../../../images/ligne-automatique-emballage-categorie.png" alt="Système eCover" loading="lazy"/>
+</a><a href="../../../pages/produits/spk-h-250-baggage/index.html" class="subcat-card">
+  <img src="../../../img/Banderoleuses/envolvedora-de-maletas-controlwrap-advanced.jpg" alt="Banderoleuses de bagages" loading="lazy"/>
+  <div class="subcat-card-info"><h3>Banderoleuses de bagages</h3><span>1 produits</span></div>
+</a><a href="../../../pages/produits/spk-ecover/index.html" class="subcat-card">
+  <img src="../../../img/Banderoleuses/Ecover-photo-face-1.jpg" alt="Système eCover" loading="lazy"/>
   <div class="subcat-card-info"><h3>Système eCover</h3><span>1 produits</span></div>
 </a></div>
   <div class="prod-grid"><div class="prod-card">
-  <div class="prod-card-img"><img src="../../../images/banderoleuse-film-macro-robopac.jpeg" alt="SPK R-310" loading="lazy"/></div>
+  <div class="prod-card-img"><img src="../../../img/Banderoleuses/Robot-banderoleuse-S7.jpg" alt="SPK R-310" loading="lazy"/></div>
   <div class="prod-card-body">
     <h4>SPK R-310</h4>
     <p>Banderoleuse semi-automatique à plateau tournant</p>
     <p style="font-size:11px;color:#aaa;">Modèle d'entrée de gamme, plateau tournant Ø1500mm, 0-12 tr/min, film pré-étiré ...</p>
-    <a href="../../contact.html" class="devis-btn">Demander un devis</a>
+    <a href="../../../pages/produits/spk-r-310/index.html" class="devis-btn">Voir le produit</a>
   </div>
 </div><div class="prod-card">
-  <div class="prod-card-img"><img src="../../../images/banderoleuse-film-macro-robopac.jpeg" alt="SPK R-320" loading="lazy"/></div>
+  <div class="prod-card-img"><img src="../../../img/Banderoleuses/Robot-macroplat-avec-palette.jpeg" alt="SPK R-320" loading="lazy"/></div>
   <div class="prod-card-body">
     <h4>SPK R-320</h4>
     <p>Banderoleuse semi-automatique plateau tournant renforcée</p>
     <p style="font-size:11px;color:#aaa;">Plateau Ø1650mm, mât 2m20, pré-étirage motorisé 270%, potence réglable en hauteu...</p>
-    <a href="../../contact.html" class="devis-btn">Demander un devis</a>
+    <a href="../../../pages/produits/spk-r-320/index.html" class="devis-btn">Voir le produit</a>
   </div>
 </div><div class="prod-card">
-  <div class="prod-card-img"><img src="../../../images/banderoleuse-film-macro-robopac.jpeg" alt="SPK R-500 Auto" loading="lazy"/></div>
+  <div class="prod-card-img"><img src="../../../img/Banderoleuses/masterplat-plus-frontal_.jpg" alt="SPK R-500 Auto" loading="lazy"/></div>
   <div class="prod-card-body">
     <h4>SPK R-500 Auto</h4>
     <p>Banderoleuse automatique plateau tournant</p>
     <p style="font-size:11px;color:#aaa;">Banderoleuse automatique avec coupe-film automatique, 35-40 palettes/heure, conv...</p>
-    <a href="../../contact.html" class="devis-btn">Demander un devis</a>
+    <a href="../../../pages/produits/spk-r-500-auto/index.html" class="devis-btn">Voir le produit</a>
   </div>
 </div><div class="prod-card">
-  <div class="prod-card-img"><img src="../../../images/banderoleuse-film-macro-robopac.jpeg" alt="SPK R-700 Auto" loading="lazy"/></div>
+  <div class="prod-card-img"><img src="../../../img/Banderoleuses/Ecoplat-base-plataforma-1500-mm.jpg" alt="SPK R-700 Auto" loading="lazy"/></div>
   <div class="prod-card-body">
     <h4>SPK R-700 Auto</h4>
     <p>Banderoleuse automatique haute cadence</p>
     <p style="font-size:11px;color:#aaa;">60 palettes/heure, plateau 1800mm, intégration convoyeur, programmation cycles v...</p>
-    <a href="../../contact.html" class="devis-btn">Demander un devis</a>
+    <a href="../../../pages/produits/spk-r-700-auto/index.html" class="devis-btn">Voir le produit</a>
   </div>
 </div><div class="prod-card">
-  <div class="prod-card-img"><img src="../../../images/ligne-automatique-emballage-categorie.png" alt="SPK Orbital 400" loading="lazy"/></div>
+  <div class="prod-card-img"><img src="../../../img/Banderoleuses/Ecover-photo-face-1.jpg" alt="SPK Orbital 400" loading="lazy"/></div>
   <div class="prod-card-body">
     <h4>SPK Orbital 400</h4>
     <p>Banderoleuse à bras tournant semi-automatique</p>
     <p style="font-size:11px;color:#aaa;">Idéale pour palettes instables ou fragiles, bras tourne autour de la palette fix...</p>
-    <a href="../../contact.html" class="devis-btn">Demander un devis</a>
+    <a href="../../../pages/produits/spk-orbital-400/index.html" class="devis-btn">Voir le produit</a>
   </div>
 </div><div class="prod-card">
-  <div class="prod-card-img"><img src="../../../images/ligne-automatique-emballage-categorie.png" alt="SPK Orbital 600" loading="lazy"/></div>
+  <div class="prod-card-img"><img src="../../../img/Banderoleuses/Ecowrap-XL-Controlpack.jpg" alt="SPK Orbital 600" loading="lazy"/></div>
   <div class="prod-card-body">
     <h4>SPK Orbital 600</h4>
     <p>Banderoleuse à bras tournant automatique</p>
     <p style="font-size:11px;color:#aaa;">Bras tournant automatique, coupe-film auto, 45 cycles/h, compatible avec ligne a...</p>
-    <a href="../../contact.html" class="devis-btn">Demander un devis</a>
+    <a href="../../../pages/produits/spk-orbital-600/index.html" class="devis-btn">Voir le produit</a>
   </div>
+</div>
 <div class='prod-card'>
   <div class='prod-card-img'><img src='../../../images/banderoleuse-film-macro-robopac.jpeg' alt='SPK Rotate' loading='lazy'/></div>
   <div class='prod-card-body'>
@@ -157,7 +152,7 @@
     <p>Banderoleuse horizontale, produits longs</p>
     <a href='../../produits/spk-horizontal-banderoleuse/index.html' class='devis-btn'>Voir le produit</a>
   </div>
-</div></div></div>
+</div></div>
 </div></section>
 
 <div class="cat-strip"><div class="container inner">
@@ -176,7 +171,7 @@
 <footer class="site-footer"><div class="container">
   <div class="footer-grid">
     <div class="fc">
-      <div class="footer-logo-text"><img src="../../../images/logo-vp-icon.svg" alt="" class="footer-logo-icon"/>Via<span>pack</span></div>
+      <div class="footer-logo-text">Via<span>pack</span></div>
       <p>Machines et matériaux d'emballage. Viapack est une entreprise dédiée à la commercialisation de solutions pour l'optimisation des processus d'emballage.</p>
       <div class="fsocial"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-x-twitter"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div>
     </div>

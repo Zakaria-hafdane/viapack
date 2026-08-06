@@ -15,7 +15,6 @@
 
 <!-- TOP BAR 
 <div class="top-bar"><div class="container inner">
-  <div class="acct"><a href="pages/account.html"><i class="fa fa-user"></i> Mon compte</a><a href="pages/account.html"><i class="fa fa-sign-in-alt"></i> Se connecter</a></div>
   <div class="social"><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" title="X"><i class="fab fa-x-twitter"></i></a><a href="#" title="YouTube"><i class="fab fa-youtube"></i></a><a href="#" title="Instagram"><i class="fab fa-instagram"></i></a><a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div>
 </div></div> -->
 
@@ -29,12 +28,9 @@
         <li><a href="pages/materiel/rubans/index.html">Rubans adhésifs</a></li>
         <li><a href="pages/materiel/feuillard/index.html">Feuillard et accessoires</a></li>
         <li><a href="pages/materiel/film-retractable/index.html">Films rétractables</a></li>
-        
         <li><a href="pages/materiel/calage/index.html">Calage et protection</a></li>
-        
         <li><a href="pages/materiel/etiquettes/index.html">Etiquettes / porte-documents</a></li>
         <li><a href="pages/materiel/sacs/index.html">Sacs en plastique</a></li>
-        
       </ul></div>
     </li>
     <li><a href="pages/machines/index.html">Machines d'emballage <span class="arr">▾</span></a>
@@ -60,48 +56,17 @@
   </ul></nav>
   <div class="hdr-right">
     <button class="search-hdr-btn" id="search-open" aria-label="Rechercher"><i class="fa fa-search"></i></button>
-    <div class="cart-btn" id="cart-open" style="cursor:pointer;" title="Mon panier"><i class="fa fa-shopping-cart"></i><span class="cart-count" id="cart-count">0</span></div>
     <button class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></button>
   </div>
 </div></header>
-
-<!-- SEARCH OVERLAY -->
-<div class="search-overlay" id="search-overlay" role="dialog" aria-label="Recherche">
-  <button class="search-close" id="search-close" aria-label="Fermer la recherche"><i class="fa fa-times"></i></button>
-  <div class="search-form-wrap">
-    <input type="text" id="search-input" placeholder="Rechercher un produit, une machine…" autocomplete="off" spellcheck="false"/>
-    <i class="fa fa-search sf-icon"></i>
-  </div>
-  <div class="search-results-wrap" id="search-results"></div>
-  <div class="search-popular">
-    <p>Recherches populaires</p>
-    <div class="search-pop-tags">
-      <a href="pages/machines/cercleuses/index.html">Cercleuses</a>
-      <a href="pages/machines/banderoleuses/index.html">Banderoleuses</a>
-      <a href="pages/materiel/film-palettisation/index.html">Film étirable</a>
-      <a href="pages/materiel/anticorrosion/index.html">VCI anticorrosion</a>
-      <a href="pages/materiel/rubans/index.html">Rubans adhésifs</a>
-      <a href="pages/machines/hot-melt.html">Hot Melt</a>
-    </div>
-  </div>
-  <p class="search-hint-txt">Appuyez sur <kbd>Échap</kbd> pour fermer &nbsp;·&nbsp; <kbd>Ctrl K</kbd> pour ouvrir</p>
-</div>
+<div class="search-overlay" id="search-overlay" role="dialog" aria-label="Recherche"><button class="search-close" id="search-close" aria-label="Fermer la recherche"><i class="fa fa-times"></i></button><div class="search-form-wrap"><input type="text" id="search-input" placeholder="Rechercher un produit, une machine…" autocomplete="off" spellcheck="false"/><i class="fa fa-search sf-icon"></i></div><div class="search-results-wrap" id="search-results"></div><div class="search-popular" id="search-popular"><p>Recherches populaires</p><div class="search-pop-tags" id="search-pop-tags"></div></div><p class="search-hint-txt">Appuyez sur <kbd>Échap</kbd> pour fermer &nbsp;&middot;&nbsp; <kbd>Ctrl K</kbd> pour ouvrir</p></div>
 
 <!-- CART OVERLAY + SIDEBAR -->
-<div class="cart-overlay" id="cart-overlay"></div>
-<aside class="cart-sidebar" id="cart-sidebar" aria-label="Panier">
-  <div class="cart-hdr">
-    <h3>Mon panier <span class="ch-badge" id="cart-count-badge"></span></h3>
-    <button class="cart-close-btn" id="cart-close" aria-label="Fermer le panier"><i class="fa fa-times"></i></button>
-  </div>
-  <div class="cart-body" id="cart-body"></div>
-  <div class="cart-foot" id="cart-foot"></div>
-</aside>
 
 <!-- HERO SLIDER -->
 <section class="hero-slider">
   <div class="slide active">
-    <img src="images/banner-boite-carton-1.gif" alt="Solutions d'emballage Viapack"/>
+    <img src="images/palettes-film-etirable-transparent-entrepot.png" alt="Solutions d'emballage Viapack"/>
     <div class="slide-overlay"><div class="slide-content">
       <span class="tag">Solutions complètes</span>
       <h2>Solutions d'emballage industriel de pointe</h2>
@@ -121,32 +86,24 @@
     </div></div>
   </div>
   <div class="slide">
-    <img src="images/Sistema_aplicador_cola_cajas-1.jpg" alt="Hot Melt Graco"/>
+    <img src="images/homme-emballant-boite-carton.png" alt="Emballage sur mesure"/>
     <div class="slide-overlay"><div class="slide-content">
-      <span class="tag">Innovation</span>
-      <h2>Systèmes thermofusibles Hot Melt Graco</h2>
-      <p>La technologie InvisiPac HM25c pour un emballage fiable, rapide et rentable.</p>
-      <a href="pages/machines/hot-melt.html" class="btn btn-red">Plus d'informations</a>
-    </div></div>
-  </div>
-  <div class="slide">
-    <img src="images/SPK-7005-remplissage-coussins-air_detalle.jpg" alt="Remplissage coussins"/>
-    <div class="slide-overlay"><div class="slide-content">
-      <span class="tag">Protection</span>
-      <h2>Remplissage par coussins d'air SPK</h2>
-      <p>Machines SPK-7005 pour la production de coussins d'air de calage à la demande.</p>
-      <a href="pages/machines/remplissage/index.html" class="btn btn-red">Découvrir la gamme</a>
+      <span class="tag">Sur mesure</span>
+      <h2>Des solutions d'emballage adaptées à chaque expédition</h2>
+      <p>Machines et matériaux pour l'e-commerce, la logistique et l'industrie, du colis unitaire à la palette complète.</p>
+      <a href="pages/applications.html" class="btn btn-red">Nos applications</a>
+      <a href="pages/contact.html" class="btn btn-outline">Demander un devis</a>
     </div></div>
   </div>
   <button class="sarr prev"><i class="fa fa-chevron-left"></i></button>
   <button class="sarr next"><i class="fa fa-chevron-right"></i></button>
-  <div class="slider-dots"><div class="dot active"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+  <div class="slider-dots"><div class="dot active"></div><div class="dot"></div><div class="dot"></div></div>
 </section>
 
 <!-- INFO STRIP -->
 <div class="info-strip"><div class="container inner">
-  <div class="info-item"><i class="fa fa-shopping-cart"></i><div><strong>COMMANDES EN LIGNE</strong><span>Livraison gratuite dès 100€ HT</span></div></div>
-  <div class="info-item"><i class="fa fa-headset"></i><div><strong>SERVICE APRÈS-VENTE</strong><span>sav@viapack.fr</span></div></div>
+  <div class="info-item"><i class="fa fa-file-alt"></i><div><strong>DEVIS GRATUIT</strong><span>Réponse sous 24h ouvrées</span></div></div>
+  <div class="info-item"><i class="fa fa-headset"></i><div><strong>SERVICE APRÈS-VENTE</strong><span>Omar.zekkari@viapack.ma</span></div></div>
   <div class="info-item"><i class="fa fa-tools"></i><div><strong>PIÈCES DÉTACHÉES</strong><span>+100 000 références en stock</span></div></div>
   <div class="info-item"><i class="fa fa-file-alt"></i><div><strong>GRANDES QUANTITÉS ?</strong><span>Demandez un devis</span></div></div>
   <div class="info-item"><i class="fa fa-certificate"></i><div><strong>CERTIFIÉ ISO 9001:2015</strong><span>Qualité garantie</span></div></div>
@@ -171,17 +128,8 @@
           <span class="pc-count"><i class="fa fa-boxes"></i> 24 produits</span>
           <h3>Anticorrosion VCI ControlOx</h3>
           <p>Films, sachets ZIP et papier kraft VCI ControlOx pour protéger les métaux pendant stockage et transport.</p>
-          <div class="pc-price">À partir de <strong>45,90&nbsp;€&nbsp;HT</strong></div>
           <div class="pc-actions">
             <a href="pages/materiel/anticorrosion/index.html" class="more">Plus d'infos</a>
-            <button class="btn-cart-add"
-              data-id="vci-film-controlox"
-              data-name="Film VCI ControlOx"
-              data-brand="ControlOx"
-              data-price="45.90"
-              data-img="images/film-etirable-VCI.jpeg">
-              <i class="fa fa-cart-plus"></i> Ajouter
-            </button>
           </div>
         </div>
       </div>
@@ -205,16 +153,45 @@
   </div>
 </section>
 
-<!-- APPLICATIONS -->
+<!-- SERVICES -->
 <section class="section section-gray">
   <div class="container">
-    <div class="section-hdr"><span class="eyebrow">Secteurs d'activité</span><h2>Des solutions pour chaque industrie</h2></div>
-    <div class="app-grid">
-      <a href="pages/applications.html#logistique" class="app-card"><img src="images/logistica-ecommerce-ok.jpg" alt="Logistique"/><div class="app-label">Logistique &amp; E-commerce</div></a>
-      <a href="pages/applications.html#alimentaire" class="app-card"><img src="images/alimentacion-ok.jpg" alt="Alimentaire"/><div class="app-label">Secteur alimentaire</div></a>
-      <a href="pages/applications.html#automobile" class="app-card"><img src="images/automocion-ok.jpg" alt="Automobile"/><div class="app-label">Automobile</div></a>
-      <a href="pages/applications.html#chimique" class="app-card"><img src="images/industria-quimica-ok.jpg" alt="Chimique"/><div class="app-label">Industrie chimique</div></a>
-      <a href="pages/applications.html#bois" class="app-card"><img src="images/madera-mueble-ok.jpg" alt="Bois"/><div class="app-label">Bois &amp; Meuble</div></a>
+    <div class="section-hdr">
+      <span class="eyebrow">Nos Services Principaux</span>
+      <h2>Des solutions d'emballage pensées pour votre activité</h2>
+      <p>Découvrez nos solutions d'emballage industriel innovantes, conçues pour garantir la protection, l'efficacité et la durabilité de vos marchandises.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card" data-animate data-delay="0.05">
+        <div class="service-icon"><i class="fa fa-ruler-combined"></i></div>
+        <h3>Emballage Sur Mesure</h3>
+        <p>Solutions personnalisées pour répondre aux besoins de chaque client avec des emballages adaptés.</p>
+      </div>
+      <div class="service-card" data-animate data-delay="0.1">
+        <div class="service-icon"><i class="fa fa-medal"></i></div>
+        <h3>Qualité Supérieure</h3>
+        <p>Matériaux et produits répondant aux normes industrielles strictes pour une protection optimale.</p>
+      </div>
+      <div class="service-card" data-animate data-delay="0.15">
+        <div class="service-icon"><i class="fa fa-truck"></i></div>
+        <h3>Services Logistiques</h3>
+        <p>Stockage temporaire et coordination logistique pour une gestion efficace de vos expéditions.</p>
+      </div>
+      <div class="service-card" data-animate data-delay="0.2">
+        <div class="service-icon"><i class="fa fa-leaf"></i></div>
+        <h3>Solutions Écologiques</h3>
+        <p>Engagement environnemental avec des matériaux recyclables et des processus durables.</p>
+      </div>
+      <div class="service-card" data-animate data-delay="0.25">
+        <div class="service-icon"><i class="fa fa-comments"></i></div>
+        <h3>Expertise Conseil</h3>
+        <p>Accompagnement personnalisé dans le choix des solutions d'emballage adaptées à vos besoins.</p>
+      </div>
+      <div class="service-card" data-animate data-delay="0.3">
+        <div class="service-icon"><i class="fa fa-bolt"></i></div>
+        <h3>Service Express</h3>
+        <p>Réactivité et rapidité garanties pour vos projets urgents avec livraisons ponctuelles.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -264,50 +241,6 @@
   </div>
 </section>
 
-<!-- TABS CUSTOMISATION -->
-<section class="section">
-  <div class="container">
-    <div class="section-hdr"><span class="eyebrow">Sur mesure</span><h2>Personnalisation de vos emballages</h2></div>
-    <div class="tab-area">
-      <div class="tab-nav">
-        <button class="tab-btn active" data-tab="tc1">Personnalisation de cartons</button>
-        <button class="tab-btn" data-tab="tc2">Personnalisation de rubans adhésifs</button>
-        <button class="tab-btn" data-tab="tc3">Personnalisation de film étirable</button>
-      </div>
-      <div class="tab-pane active" id="tc1">
-        <div class="ti"><img src="images/caja-controlpack-removebg-preview.png" alt="Cartons personnalisés"/></div>
-        <div class="tab-form"><h3>PERSONNALISATION DE BOÎTES EN CARTON</h3><h4>Impression et dimensions sur mesure</h4>
-          <div class="form-row">
-            <div class="fg"><label>Longueur (cm)</label><input type="number" placeholder="Ex: 30" min="10"/></div>
-            <div class="fg"><label>Largeur (cm)</label><input type="number" placeholder="Ex: 20" min="10"/></div>
-            <div class="fg"><label>Hauteur (cm)</label><input type="number" placeholder="Ex: 15" min="10"/></div>
-          </div>
-          <p style="font-size:12px;color:#aaa;margin-bottom:18px;">* Dimensions minimales 10cm par côté</p>
-          <button class="btn btn-red search-btn">Rechercher</button>
-        </div>
-      </div>
-      <div class="tab-pane" id="tc2">
-        <div class="ti"><img src="images/cintas-adhesivas.png" alt="Rubans personnalisés"/></div>
-        <div class="tab-form"><h3>PERSONNALISATION DE RUBANS ADHÉSIFS</h3><h4>Impression et dimensions sur mesure</h4>
-          <div class="form-row" style="grid-template-columns:1fr;">
-            <div class="fg"><label>Matériel</label><select><option value="">Sélectionnez</option><option>PP Acrylique</option><option>PP Solvant</option><option>PP Hot Melt</option><option>PVC</option><option>Kraft gommé</option></select></div>
-          </div>
-          <button class="btn btn-red search-btn">Rechercher</button>
-        </div>
-      </div>
-      <div class="tab-pane" id="tc3">
-        <div class="ti"><img src="images/film-impreso.png" alt="Film personnalisé"/></div>
-        <div class="tab-form"><h3>PERSONNALISATION DE FILM ÉTIRABLE</h3><h4>Impression et dimensions sur mesure</h4>
-          <div class="form-row" style="grid-template-columns:1fr;">
-            <div class="fg"><label>Couleur</label><select><option value="">Sélectionnez</option><option>Transparent</option><option>Blanc</option><option>Noir</option><option>Bleu</option></select></div>
-          </div>
-          <button class="btn btn-red search-btn">Rechercher</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- TESTIMONIALS -->
 <section class="section section-gray">
   <div class="container">
@@ -316,21 +249,6 @@
       <div class="testi active"><blockquote>Viapack nous a fourni une solution complète et adaptée à nos besoins industriels. Le service après-vente est réactif et professionnel. Nous recommandons vivement leurs machines de cerclage SPK.</blockquote><cite>— Directeur logistique, entreprise industrielle Nord-Est France</cite></div>
       <div class="testi"><blockquote>Excellent accompagnement depuis la prise en charge jusqu'à la mise en service. Les emballages anticorrosion VCI ControlOx ont résolu nos problèmes de stockage longue durée sur pièces métalliques.</blockquote><cite>— Responsable production, secteur automobile</cite></div>
       <div class="testi"><blockquote>La personnalisation de nos boîtes carton à notre logo a été réalisée rapidement avec une qualité irréprochable. Un partenaire de confiance pour toute notre chaîne d'emballage.</blockquote><cite>— Gérant, PME agroalimentaire</cite></div>
-    </div>
-  </div>
-</section>
-
-<!-- VIDEO -->
-<section class="section section-dark">
-  <div class="container">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;">
-      <div style="color:#fff;">
-        <span style="color:var(--red);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;display:block;margin-bottom:12px;">Service complet</span>
-        <h2 style="font-size:32px;font-weight:800;line-height:1.25;margin-bottom:18px;color:#fff;">Nous sommes prêts à relever tous vos défis d'emballage</h2>
-        <p style="color:rgba(255,255,255,.72);font-size:15px;line-height:1.8;margin-bottom:16px;">Plus de 30 ans d'expérience dans la commercialisation de solutions d'emballage industriel.</p>
-        <p style="color:rgba(255,255,255,.72);font-size:15px;line-height:1.8;">Notre objectif est de faire en sorte que l'emballage devienne un avantage concurrentiel. Solutions innovantes, personnalisées et durables.</p>
-      </div>
-      <div><video controls style="width:100%;border-radius:8px;box-shadow:0 10px 40px rgba(0,0,0,.4);"><source src="https://www.controlpack.fr/wp-content/uploads/2025/01/Controlpack-sigue-creciendo-junto-a-ti.mp4" type="video/mp4"/>Votre navigateur ne supporte pas la vidéo HTML5.</video></div>
     </div>
   </div>
 </section>
@@ -354,19 +272,19 @@
     <div class="contact-grid">
       <div class="ci">
         <h2>CONTACTEZ-NOUS</h2>
-        <div class="cd"><i class="fa fa-map-marker-alt"></i><div><h4>Adresse</h4><p>Succursale France<br/>6 Rue des Frères Boudé<br/>31100 Toulouse</p></div></div>
-        <div class="cd"><i class="fa fa-envelope"></i><div><h4>Email</h4><a href="mailto:info@viapack.fr">info@viapack.fr</a></div></div>
-        <div class="cd"><i class="fa fa-phone-alt"></i><div><h4>Téléphone</h4><a href="tel:+33695802491">(+33) 6 95 80 24 91</a></div></div>
-        <div style="margin-top:28px;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.5!2d1.4445!3d43.5923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDM!5e0!3m2!1sfr!2sfr!4v1600000000000" width="100%" height="220" style="border:0;border-radius:6px;" allowfullscreen="" loading="lazy"></iframe></div>
+        <div class="cd"><i class="fa fa-map-marker-alt"></i><div><h4>Adresse</h4><p>Lotissement Jeanne Nakhil, lot N° 1251<br/>Zone industrielle Gzenaya<br/>Tanger, Maroc</p></div></div>
+        <div class="cd"><i class="fa fa-envelope"></i><div><h4>Email</h4><a href="mailto:Omar.zekkari@viapack.ma">Omar.zekkari@viapack.ma</a><br/><a href="mailto:Import.director@viapack.ma">Import.director@viapack.ma</a></div></div>
+        <div class="cd"><i class="fa fa-phone-alt"></i><div><h4>Téléphone</h4><a href="tel:+212660732754">+212 660 732 754</a></div></div>
+        <div style="margin-top:28px;"><iframe src="https://www.google.com/maps?q=Lotissement+Jeanne+Nakhil+Zone+industrielle+Gzenaya+Tanger&output=embed" width="100%" height="220" style="border:0;border-radius:6px;" allowfullscreen="" loading="lazy"></iframe></div>
       </div>
       <div class="cf">
         <h3>EXPLIQUEZ-NOUS VOTRE PROJET</h3>
         <form id="contact-form">
-          <div class="fg"><input type="text" placeholder="Votre nom *" required/></div>
-          <div class="fg"><input type="email" placeholder="Votre email *" required/></div>
-          <div class="fg"><input type="tel" placeholder="Téléphone"/></div>
-          <div class="fg"><input type="text" placeholder="Société"/></div>
-          <div class="fg"><textarea placeholder="Votre message *" required></textarea></div>
+          <div class="fg"><input type="text" name="name" placeholder="Votre nom *" required/></div>
+          <div class="fg"><input type="email" name="email" placeholder="Votre email *" required/></div>
+          <div class="fg"><input type="tel" name="phone" placeholder="Téléphone"/></div>
+          <div class="fg"><input type="text" name="company" placeholder="Société"/></div>
+          <div class="fg"><textarea name="message" placeholder="Votre message *" required></textarea></div>
           <button type="submit" class="btn btn-red" style="width:100%;">Envoyer le message</button>
         </form>
       </div>
@@ -375,7 +293,9 @@
 </section>
 
 <!-- PARTNERS -->
-<section class="partners"><div class="container"><div class="partners-logos">
+<section class="partners"><div class="container">
+  <p style="text-align:center;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--light);margin-bottom:22px;">Clients &amp; Partenaires</p>
+  <div class="partners-logos">
   <img src="images/logo-bostik.jpg" alt="Bostik"/>
   <img src="images/logo-graco.jpg" alt="Graco"/>
   <img src="images/logo-cartonfast.jpg" alt="Cartonfast"/>
@@ -394,8 +314,9 @@
 <!-- FOOTER -->
 <footer class="site-footer"><div class="container">
   <div class="footer-grid">
-    <div class="fc"><div class="footer-logo-text"><img src="images/logo-vp-icon.svg" alt="" class="footer-logo-icon"/>Via<span>pack</span></div>
+    <div class="fc"><div class="footer-logo-text">Via<span>pack</span></div>
       <p>Machines et matériaux d'emballage. Viapack est une entreprise dédiée à la commercialisation de solutions pour l'optimisation des processus d'emballage.</p>
+      <p><i class="fa fa-map-marker-alt"></i> Lotissement Jeanne Nakhil, lot N° 1251, Zone industrielle Gzenaya, Tanger<br/><i class="fa fa-envelope"></i> <a href="mailto:Import.director@viapack.ma" style="color:rgba(255,255,255,.65);">Import.director@viapack.ma</a></p>
       <div class="fsocial"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-x-twitter"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div>
     </div>
     <div class="fc"><h4>Informations</h4><ul>

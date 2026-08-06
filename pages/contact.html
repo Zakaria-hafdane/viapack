@@ -14,7 +14,6 @@
 <body>
 
 <div class="top-bar"><div class="container inner">
-  <div class="acct"><a href="../pages/account.html"><i class="fa fa-user"></i> Mon compte</a><a href="../pages/account.html"><i class="fa fa-sign-in-alt"></i> Se connecter</a></div>
   <div class="social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-x-twitter"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div>
 </div></div>
 <header class="site-header"><div class="container header-inner">
@@ -26,26 +25,22 @@
         <li><a href="../pages/materiel/rubans/index.html">Rubans adhésifs</a></li>
         <li><a href="../pages/materiel/feuillard/index.html">Feuillard et accessoires</a></li>
         <li><a href="../pages/materiel/film-retractable/index.html">Films rétractables</a></li>
-        
         <li><a href="../pages/materiel/calage/index.html">Calage et protection</a></li>
-        
         <li><a href="../pages/materiel/etiquettes/index.html">Etiquettes / porte-documents</a></li>
         <li><a href="../pages/materiel/sacs/index.html">Sacs en plastique</a></li>
-        
       </ul></div>
     </li>
     <li><a href="../pages/machines/index.html">Machines d'emballage <span class="arr">▾</span></a>
       <div class="dropdown">
-        <div class="dd-col"><h4>Enveloppements</h4><ul>
+        <div class="dd-col"><h4>Enveloppements &amp; LGV</h4><ul>
           <li><a href="../pages/machines/banderoleuses/index.html">Banderoleuses</a></li>
           <li><a href="../pages/machines/lignes-automatiques.html">Lignes automatiques</a></li>
         </ul></div>
-        
         <div class="dd-col"><h4>Film rétractable</h4><ul>
           <li><a href="../pages/machines/thermofilmeuses/index.html">Thermofilmeuses</a></li>
           <li><a href="../pages/machines/ensacheuses/index.html">Ensacheuses</a></li>
         </ul></div>
-        <div class="dd-col"><h4>Cerclage</h4><ul>
+        <div class="dd-col"><h4>Cerclage &amp; recyclage</h4><ul>
           <li><a href="../pages/machines/cercleuses/index.html">Cercleuses</a></li>
           <li><a href="../pages/machines/presses/index.html">Presses à balles</a></li>
         </ul></div>
@@ -57,44 +52,45 @@
     <li><a href="../pages/contact.html">Contact</a></li>
   </ul></nav>
   <div class="hdr-right">
-    <div class="cart-btn"><i class="fa fa-shopping-cart"></i><span class="cart-count">0</span></div>
+    <button class="search-hdr-btn" id="search-open" aria-label="Rechercher"><i class="fa fa-search"></i></button>
     <button class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></button>
   </div>
 </div></header>
-<div class="page-hero"><div class="container"><div class="breadcrumb"><a href="../../index.html">Accueil</a> <span class="sep">›</span> Contact</div><h1>Contactez-nous</h1><p>Notre équipe est disponible pour répondre à toutes vos questions sur nos machines et matériaux d'emballage.</p></div></div>
+<div class="search-overlay" id="search-overlay" role="dialog" aria-label="Recherche"><button class="search-close" id="search-close" aria-label="Fermer la recherche"><i class="fa fa-times"></i></button><div class="search-form-wrap"><input type="text" id="search-input" placeholder="Rechercher un produit, une machine…" autocomplete="off" spellcheck="false"/><i class="fa fa-search sf-icon"></i></div><div class="search-results-wrap" id="search-results"></div><div class="search-popular" id="search-popular"><p>Recherches populaires</p><div class="search-pop-tags" id="search-pop-tags"></div></div><p class="search-hint-txt">Appuyez sur <kbd>Échap</kbd> pour fermer &nbsp;&middot;&nbsp; <kbd>Ctrl K</kbd> pour ouvrir</p></div>
+<div class="page-hero"><div class="container"><div class="breadcrumb"><a href="../index.html">Accueil</a> <span class="sep">›</span> Contact</div><h1>Contactez-nous</h1><p>Notre équipe est disponible pour répondre à toutes vos questions sur nos machines et matériaux d'emballage.</p></div></div>
 <section class="page-body"><div class="container">
   <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:25px;margin-bottom:55px;">
     <div style="background:#f5f5f5;border-radius:7px;padding:32px;text-align:center;">
       <i class="fa fa-map-marker-alt" style="font-size:34px;color:var(--red);margin-bottom:14px;display:block;"></i>
       <h3 style="font-size:16px;font-weight:700;margin-bottom:10px;">Adresse</h3>
-      <p style="font-size:14px;color:#666;">Succursale France<br/>6 Rue des Frères Boudé<br/>31100 Toulouse</p>
+      <p style="font-size:14px;color:#666;">Lotissement Jeanne Nakhil, lot N° 1251<br/>Zone industrielle Gzenaya<br/>Tanger, Maroc</p>
     </div>
     <div style="background:#f5f5f5;border-radius:7px;padding:32px;text-align:center;">
       <i class="fa fa-envelope" style="font-size:34px;color:var(--red);margin-bottom:14px;display:block;"></i>
       <h3 style="font-size:16px;font-weight:700;margin-bottom:10px;">Email</h3>
-      <p style="font-size:14px;"><a href="mailto:info@viapack.fr" style="color:#666;">info@viapack.fr</a><br/><a href="mailto:sav@viapack.fr" style="color:#666;">sav@viapack.fr</a></p>
+      <p style="font-size:14px;"><a href="mailto:Omar.zekkari@viapack.ma" style="color:#666;">Omar.zekkari@viapack.ma</a><br/><a href="mailto:Import.director@viapack.ma" style="color:#666;">Import.director@viapack.ma</a></p>
     </div>
     <div style="background:#f5f5f5;border-radius:7px;padding:32px;text-align:center;">
       <i class="fa fa-phone-alt" style="font-size:34px;color:var(--red);margin-bottom:14px;display:block;"></i>
       <h3 style="font-size:16px;font-weight:700;margin-bottom:10px;">Téléphone</h3>
-      <p style="font-size:14px;"><a href="tel:+33695802491" style="color:#666;">(+33) 6 95 80 24 91</a></p>
+      <p style="font-size:14px;"><a href="tel:+212660732754" style="color:#666;">+212 660 732 754</a></p>
     </div>
   </div>
   <div class="contact-grid">
     <div class="ci">
       <h2>EXPLIQUEZ-NOUS VOTRE PROJET</h2>
       <p style="color:#666;margin-bottom:22px;">Notre équipe vous recontacte sous 24h ouvrées.</p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.5!2d1.4445!3d43.5923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDM!5e0!3m2!1sfr!2sfr!4v1600000000000" width="100%" height="300" style="border:0;border-radius:6px;" allowfullscreen="" loading="lazy"></iframe>
+      <iframe src="https://www.google.com/maps?q=Lotissement+Jeanne+Nakhil+Zone+industrielle+Gzenaya+Tanger&output=embed" width="100%" height="300" style="border:0;border-radius:6px;" allowfullscreen="" loading="lazy"></iframe>
     </div>
     <div class="cf">
       <h3>Votre message</h3>
       <form id="contact-form">
-        <div class="fg"><input type="text" placeholder="Votre nom *" required/></div>
-        <div class="fg"><input type="email" placeholder="Votre email *" required/></div>
-        <div class="fg"><input type="tel" placeholder="Téléphone"/></div>
-        <div class="fg"><input type="text" placeholder="Société"/></div>
-        <div class="fg"><select><option value="">Objet de votre demande</option><option>Demande de devis machine</option><option>Demande de devis matériel</option><option>Service après-vente</option><option>Information produit</option><option>Partenariat</option><option>Autre</option></select></div>
-        <div class="fg"><textarea placeholder="Votre message *" required></textarea></div>
+        <div class="fg"><input type="text" name="name" placeholder="Votre nom *" required/></div>
+        <div class="fg"><input type="email" name="email" placeholder="Votre email *" required/></div>
+        <div class="fg"><input type="tel" name="phone" placeholder="Téléphone"/></div>
+        <div class="fg"><input type="text" name="company" placeholder="Société"/></div>
+        <div class="fg"><select name="subject"><option value="">Objet de votre demande</option><option>Demande de devis machine</option><option>Demande de devis matériel</option><option>Service après-vente</option><option>Information produit</option><option>Partenariat</option><option>Autre</option></select></div>
+        <div class="fg"><textarea name="message" placeholder="Votre message *" required></textarea></div>
         <button type="submit" class="btn btn-red" style="width:100%;">Envoyer</button>
       </form>
     </div>
@@ -116,7 +112,7 @@
 </div></div></section>
 <footer class="site-footer"><div class="container">
   <div class="footer-grid">
-    <div class="fc"><div class="footer-logo-text"><img src="../images/logo-vp-icon.svg" alt="" class="footer-logo-icon"/>Via<span>pack</span></div>
+    <div class="fc"><div class="footer-logo-text">Via<span>pack</span></div>
       <p>Machines et matériaux d'emballage. Viapack est une entreprise dédiée à la commercialisation de solutions pour l'optimisation des processus d'emballage.</p>
       <div class="fsocial"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-x-twitter"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div>
     </div>

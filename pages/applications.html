@@ -13,10 +13,10 @@
 </head>
 <body>
 
+<!-- TOP BAR 
 <div class="top-bar"><div class="container inner">
-  <div class="acct"><a href="../pages/account.html"><i class="fa fa-user"></i> Mon compte</a><a href="../pages/account.html"><i class="fa fa-sign-in-alt"></i> Se connecter</a></div>
-  <div class="social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-x-twitter"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div>
-</div></div>
+  <div class="social"><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" title="X"><i class="fab fa-x-twitter"></i></a><a href="#" title="YouTube"><i class="fab fa-youtube"></i></a><a href="#" title="Instagram"><i class="fab fa-instagram"></i></a><a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div>
+</div></div> -->
 <header class="site-header"><div class="container header-inner">
   <a href="../index.html" class="logo-link"><img src="../images/logo.png" alt="Viapack" class="logo-img"/></a>
   <nav class="main-nav" id="main-nav"><ul>
@@ -26,27 +26,22 @@
         <li><a href="../pages/materiel/rubans/index.html">Rubans adhésifs</a></li>
         <li><a href="../pages/materiel/feuillard/index.html">Feuillard et accessoires</a></li>
         <li><a href="../pages/materiel/film-retractable/index.html">Films rétractables</a></li>
-        
         <li><a href="../pages/materiel/calage/index.html">Calage et protection</a></li>
-        
         <li><a href="../pages/materiel/etiquettes/index.html">Etiquettes / porte-documents</a></li>
         <li><a href="../pages/materiel/sacs/index.html">Sacs en plastique</a></li>
-        
       </ul></div>
     </li>
     <li><a href="../pages/machines/index.html">Machines d'emballage <span class="arr">▾</span></a>
       <div class="dropdown">
-        <div class="dd-col"><h4>Enveloppements</h4><ul>
+        <div class="dd-col"><h4>Enveloppements &amp; LGV</h4><ul>
           <li><a href="../pages/machines/banderoleuses/index.html">Banderoleuses</a></li>
           <li><a href="../pages/machines/lignes-automatiques.html">Lignes automatiques</a></li>
         </ul></div>
-       
         <div class="dd-col"><h4>Film rétractable</h4><ul>
           <li><a href="../pages/machines/thermofilmeuses/index.html">Thermofilmeuses</a></li>
           <li><a href="../pages/machines/ensacheuses/index.html">Ensacheuses</a></li>
         </ul></div>
-        
-        <div class="dd-col"><h4>Cerclage</h4><ul>
+        <div class="dd-col"><h4>Cerclage &amp; recyclage</h4><ul>
           <li><a href="../pages/machines/cercleuses/index.html">Cercleuses</a></li>
           <li><a href="../pages/machines/presses/index.html">Presses à balles</a></li>
         </ul></div>
@@ -58,11 +53,12 @@
     <li><a href="../pages/contact.html">Contact</a></li>
   </ul></nav>
   <div class="hdr-right">
-    <div class="cart-btn"><i class="fa fa-shopping-cart"></i><span class="cart-count">0</span></div>
+    <button class="search-hdr-btn" id="search-open" aria-label="Rechercher"><i class="fa fa-search"></i></button>
     <button class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></button>
   </div>
 </div></header>
-<div class="page-hero"><div class="container"><div class="breadcrumb"><a href="../../index.html">Accueil</a> <span class="sep">›</span> Applications D'Emballage</div><h1>Applications D'Emballage</h1><p>Nos solutions d'emballage s'adaptent à tous les secteurs industriels et commerciaux.</p></div></div>
+<div class="search-overlay" id="search-overlay" role="dialog" aria-label="Recherche"><button class="search-close" id="search-close" aria-label="Fermer la recherche"><i class="fa fa-times"></i></button><div class="search-form-wrap"><input type="text" id="search-input" placeholder="Rechercher un produit, une machine…" autocomplete="off" spellcheck="false"/><i class="fa fa-search sf-icon"></i></div><div class="search-results-wrap" id="search-results"></div><div class="search-popular" id="search-popular"><p>Recherches populaires</p><div class="search-pop-tags" id="search-pop-tags"></div></div><p class="search-hint-txt">Appuyez sur <kbd>Échap</kbd> pour fermer &nbsp;&middot;&nbsp; <kbd>Ctrl K</kbd> pour ouvrir</p></div>
+<div class="page-hero"><div class="container"><div class="breadcrumb"><a href="../index.html">Accueil</a> <span class="sep">›</span> Applications D'Emballage</div><h1>Applications D'Emballage</h1><p>Nos solutions d'emballage s'adaptent à tous les secteurs industriels et commerciaux.</p></div></div>
 <section class="page-body"><div class="container"><div class="app-block " id="logistique">
   <img src="../images/SPK-7005-remplissage-coussins-air_detalle.jpg" alt="Logistique & E-commerce" loading="lazy"/>
   <div>
@@ -70,7 +66,7 @@
     <h2>Logistique & E-commerce</h2>
     <p>Le secteur logistique exige des solutions rapides, fiables et économiques. Nos banderoleuses, cercleuses et matériaux de calage sécurisent efficacement tous types d'envois.</p>
     <p>Que ce soit pour des palettes entières, des colis individuels ou des commandes en masse, Viapack propose des solutions adaptées à chaque flux logistique.</p>
-    <a href="../contact.html" class="btn btn-red">Demander un devis</a>
+    <a href="contact.html" class="btn btn-red">Demander un devis</a>
   </div>
 </div><div class="app-block reverse" id="alimentaire">
   <img src="../images/Sistema_aplicador_cola_cajas-1.jpg" alt="Secteur alimentaire" loading="lazy"/>
@@ -79,7 +75,7 @@
     <h2>Secteur alimentaire</h2>
     <p>L'industrie agroalimentaire requiert des emballages conformes aux normes sanitaires les plus strictes. Nos ensacheuses, thermofilmeuses et films alimentaires garantissent la fraîcheur et la sécurité.</p>
     <p>Nous proposons des solutions certifiées contact alimentaire pour tous types de conditionnement : frais, surgelés, épicerie sèche, boissons et produits transformés.</p>
-    <a href="../contact.html" class="btn btn-red">Demander un devis</a>
+    <a href="contact.html" class="btn btn-red">Demander un devis</a>
   </div>
 </div><div class="app-block " id="automobile">
   <img src="../images/broyeur-cartons-industries-profipack.jpg" alt="Automobile" loading="lazy"/>
@@ -88,7 +84,7 @@
     <h2>Automobile</h2>
     <p>Le secteur automobile nécessite des emballages robustes pour protéger des pièces lourdes et volumineuses. Nos solutions de cerclage, emballages anticorrosion VCI et films étirables industriels sont idéaux.</p>
     <p>Les emballages VCI ControlOx protègent efficacement les pièces métalliques contre la corrosion pendant le transport et le stockage longue durée.</p>
-    <a href="../contact.html" class="btn btn-red">Demander un devis</a>
+    <a href="contact.html" class="btn btn-red">Demander un devis</a>
   </div>
 </div><div class="app-block reverse" id="chimique">
   <img src="../images/film-etirable-VCI.jpeg" alt="Industrie chimique" loading="lazy"/>
@@ -97,7 +93,7 @@
     <h2>Industrie chimique</h2>
     <p>L'industrie chimique exige des emballages résistants aux produits corrosifs. Nos films, sachets et papier VCI offrent une barrière efficace contre la dégradation.</p>
     <p>Nos solutions sont conçues pour résister aux environnements industriels les plus exigeants tout en préservant l'intégrité des produits.</p>
-    <a href="../contact.html" class="btn btn-red">Demander un devis</a>
+    <a href="contact.html" class="btn btn-red">Demander un devis</a>
   </div>
 </div><div class="app-block " id="bois">
   <img src="../images/Gemini_Generated_Image_9jl9ur9jl9ur9jl9.png" alt="Bois & Meuble" loading="lazy"/>
@@ -106,7 +102,7 @@
     <h2>Bois & Meuble</h2>
     <p>L'industrie du bois et du meuble nécessite des solutions adaptées aux formats longs et aux charges lourdes. Nos cercleuses et feuillards professionnels garantissent la sécurité du transport.</p>
     <p>Nos équipements de cerclage SPK permettent de sécuriser planches, panneaux, meubles et bois de charpente quelle que soit leur longueur.</p>
-    <a href="../contact.html" class="btn btn-red">Demander un devis</a>
+    <a href="contact.html" class="btn btn-red">Demander un devis</a>
   </div>
 </div><div class="app-block reverse" id="pharmacie">
   <img src="../images/Ensacheuse_Simplicita_Bag_Smart_400H_logo_controlpack.jpeg" alt="Industrie pharmaceutique" loading="lazy"/>
@@ -115,7 +111,7 @@
     <h2>Industrie pharmaceutique</h2>
     <p>L'industrie pharmaceutique impose des normes strictes : hygiène GMP, traçabilité totale, emballages inviolables. Nos ensacheuses et thermofilmeuses certifiées répondent à ces exigences.</p>
     <p>Conditionnement de comprimés, gélules, sachets unidoses et dispositifs médicaux selon les normes ISO 13485 et BPF.</p>
-    <a href="../contact.html" class="btn btn-red">Demander un devis</a>
+    <a href="contact.html" class="btn btn-red">Demander un devis</a>
   </div>
 </div></div></section>
 
@@ -134,7 +130,7 @@
 </div></div></section>
 <footer class="site-footer"><div class="container">
   <div class="footer-grid">
-    <div class="fc"><div class="footer-logo-text"><img src="../images/logo-vp-icon.svg" alt="" class="footer-logo-icon"/>Via<span>pack</span></div>
+    <div class="fc"><div class="footer-logo-text">Via<span>pack</span></div>
       <p>Machines et matériaux d'emballage. Viapack est une entreprise dédiée à la commercialisation de solutions pour l'optimisation des processus d'emballage.</p>
       <div class="fsocial"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-x-twitter"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div>
     </div>

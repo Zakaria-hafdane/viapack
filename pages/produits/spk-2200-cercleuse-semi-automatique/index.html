@@ -12,19 +12,13 @@
   <link rel="stylesheet" href="../../../css/style.css"/>
 </head>
 <body>
-<div class="disc-notif" id="disc-notif">
-  <i class="fa fa-tag tag-icon"></i>
-  <span>Livraison offerte dès <strong>100&nbsp;€&nbsp;HT</strong> &nbsp;·&nbsp; <strong>-10&nbsp;%</strong> sur votre 1ère commande avec le code <strong>VIAPACK10</strong></span>
-  <button class="disc-notif-close" id="disc-notif-close"><i class="fa fa-times"></i></button>
-</div>
 <div class="top-bar"><div class="container inner">
-  <div class="acct"><a href="../../../pages/account.html"><i class="fa fa-user"></i> Mon compte</a><a href="../../../pages/account.html"><i class="fa fa-sign-in-alt"></i> Se connecter</a></div>
   <div class="social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-x-twitter"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div>
 </div></div>
 <header class="site-header"><div class="container header-inner">
   <a href="../../../index.html" class="logo-link"><img src="../../../images/logo.png" alt="Viapack" class="logo-img"/></a>
   <nav class="main-nav" id="main-nav"><ul>
-    <li><a href="../../../pages/materiel/index.html">Matériel d'emballage <span class="arr">&#9662;</span></a>
+    <li><a href="../../../pages/materiel/index.html">Matériel d'emballage <span class="arr">▾</span></a>
       <div class="dropdown dd-simple"><ul>
         <li><a href="../../../pages/materiel/film-palettisation/index.html">Film et palettisation</a></li>
         <li><a href="../../../pages/materiel/rubans/index.html">Rubans adhésifs</a></li>
@@ -35,39 +29,33 @@
         <li><a href="../../../pages/materiel/sacs/index.html">Sacs en plastique</a></li>
       </ul></div>
     </li>
-    <li><a href="../../../pages/machines/index.html">Machines d'emballage <span class="arr">&#9662;</span></a>
+    <li><a href="../../../pages/machines/index.html">Machines d'emballage <span class="arr">▾</span></a>
       <div class="dropdown">
-        <div class="dd-col"><h4>Enveloppements</h4><ul>
+        <div class="dd-col"><h4>Enveloppements &amp; LGV</h4><ul>
           <li><a href="../../../pages/machines/banderoleuses/index.html">Banderoleuses</a></li>
+          <li><a href="../../../pages/machines/lignes-automatiques.html">Lignes automatiques</a></li>
         </ul></div>
         <div class="dd-col"><h4>Film rétractable</h4><ul>
           <li><a href="../../../pages/machines/thermofilmeuses/index.html">Thermofilmeuses</a></li>
           <li><a href="../../../pages/machines/ensacheuses/index.html">Ensacheuses</a></li>
         </ul></div>
-        <div class="dd-col"><h4>Cerclage</h4><ul>
+        <div class="dd-col"><h4>Cerclage &amp; recyclage</h4><ul>
           <li><a href="../../../pages/machines/cercleuses/index.html">Cercleuses</a></li>
           <li><a href="../../../pages/machines/presses/index.html">Presses à balles</a></li>
-        </ul></div>
-        <div class="dd-col"><h4>Protection</h4><ul>
-          <li><a href="../../../pages/machines/remplissage/index.html">Remplissage</a></li>
-          <li><a href="../../../pages/machines/broyeurs/index.html">Broyeurs de cartons</a></li>
         </ul></div>
       </div>
     </li>
     <li><a href="../../../pages/qui-sommes-nous.html">Qui Sommes-Nous?</a></li>
+    <li><a href="../../../pages/applications.html">Applications D'Emballage</a></li>
+    <li><a href="../../../pages/blog/index.html">Blog</a></li>
     <li><a href="../../../pages/contact.html">Contact</a></li>
   </ul></nav>
   <div class="hdr-right">
-    <div class="cart-btn" id="cart-open" style="cursor:pointer;"><i class="fa fa-shopping-cart"></i><span class="cart-count" id="cart-count">0</span></div>
+    <button class="search-hdr-btn" id="search-open" aria-label="Rechercher"><i class="fa fa-search"></i></button>
     <button class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></button>
   </div>
 </div></header>
-<div class="cart-overlay" id="cart-overlay"></div>
-<aside class="cart-sidebar" id="cart-sidebar">
-  <div class="cart-hdr"><h3>Mon panier</h3><button class="cart-close-btn" id="cart-close"><i class="fa fa-times"></i></button></div>
-  <div class="cart-body" id="cart-body"></div>
-  <div class="cart-foot" id="cart-foot"></div>
-</aside>
+<div class="search-overlay" id="search-overlay" role="dialog" aria-label="Recherche"><button class="search-close" id="search-close" aria-label="Fermer la recherche"><i class="fa fa-times"></i></button><div class="search-form-wrap"><input type="text" id="search-input" placeholder="Rechercher un produit, une machine…" autocomplete="off" spellcheck="false"/><i class="fa fa-search sf-icon"></i></div><div class="search-results-wrap" id="search-results"></div><div class="search-popular" id="search-popular"><p>Recherches populaires</p><div class="search-pop-tags" id="search-pop-tags"></div></div><p class="search-hint-txt">Appuyez sur <kbd>Échap</kbd> pour fermer &nbsp;&middot;&nbsp; <kbd>Ctrl K</kbd> pour ouvrir</p></div>
 <section class="page-body" style="padding-top:30px;"><div class="container">
   <div class="breadcrumb" style="margin-bottom:24px;">
     <a href="../../../index.html">Accueil</a><span class="sep">&#8250;</span>
@@ -91,29 +79,10 @@
         <div class="pd-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
         <div class="pd-rating-info">4.5/5 — <a href="#">Voir les avis</a></div>
       </div>
-      <div class="pd-sku">Référence : <strong>SPK2200</strong></div>
-      <div class="pd-price-block">
-        <div class="pd-price-from">À partir de</div>
-        <div class="pd-price">2 290,00&nbsp;€&nbsp;HT</div>
-        <div class="pd-price-tax">Prix HT — TVA 20% applicable</div>
-      </div>
-      <div class="pd-stock"><i class="fa fa-check-circle"></i> En stock — Livraison sous 5 à 7 jours ouvrés</div>
-      <div class="pd-qty-row">
-        <span class="pd-qty-lbl">Quantité</span>
-        <div class="pd-qty">
-          <button onclick="var i=this.nextElementSibling.nextElementSibling;i.value=Math.max(1,+i.value-1)">&#8722;</button>
-          <button style="display:none"></button>
-          <input type="number" value="1" min="1" id="qty-input"/>
-          <button onclick="document.getElementById('qty-input').value=+document.getElementById('qty-input').value+1">+</button>
-        </div>
-      </div>
+      <div class="pd-sku">Référence : <strong>SPK2200</strong></div><div class="pd-stock"><i class="fa fa-check-circle"></i> En stock</div>
       <div class="pd-btn-row">
-        <button class="pd-add-cart btn-cart-add" data-id="SPK2200" data-name="SPK 2200 — Cercleuse semi-automatique" data-brand="Viapack" data-price="2290.00" data-img="../../../images/machine-cercleuse-palette-tete-superieure.jpeg">
-          <i class="fa fa-shopping-cart"></i> Ajouter au panier
-        </button>
         <a href="../../../pages/contact.html" class="pd-devis-btn"><i class="fa fa-file-alt"></i> Devis</a>
       </div>
-      <div class="pd-delivery"><i class="fa fa-truck"></i> Livraison gratuite dès 100&nbsp;€ HT d'achat</div>
       <div class="pd-share">
         <span class="pd-share-lbl">Partager :</span>
         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -165,7 +134,7 @@
 <footer class="site-footer"><div class="container">
   <div class="footer-grid">
     <div class="fc">
-      <div class="footer-logo-text"><img src="../../../images/logo-vp-icon.svg" alt="" class="footer-logo-icon"/>Via<span>pack</span></div>
+      <div class="footer-logo-text">Via<span>pack</span></div>
       <p>Machines et matériaux d'emballage professionnels.</p>
       <div class="fsocial"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div>
     </div>
